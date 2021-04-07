@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Attendance Management System</string>
+
+    <string name="tracking">Tracking</string>
+    <string name="login">Login</string>
+    <string name="please_proceed">Please do Sign in to Proceed...</string>
+    <string name="please_proceed_signup">Please do Sign Up in to Proceed...</string>
+    <string name="please_proceed_forgot_password">Please do Forgot Password in to Proceed...</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email ID</string>
+    <string name="password">Password</string>
+    <string name="forgot">Forgot Password ?</string>
+    <string name="do_not_have_admin_account_yet">Don\'t have Admin account yet ?</string>
+    <string name="already_have_a_account">Already have Account Login Here...</string>
+    <string name="make_free_account">Make Free account</string>
+    <string name="create_account">Create Account</string>
+    <string name="notice">Notice</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="task_details">Task Details</string>
+    <string name="update_btn_title">Close</string>
+    <string name="auth_failed">Login Failed</string>
+    <string name="alert_msg">Something is wrong with the\nusername or password.\nplease try again.</string>
+    <string name="notice_note">Android is an open platform that is freely available to you as an app developer.
+        You can immediately download the Android SDK, develop apps,
+        and distribute them to the world without any registration or fees.
+        Android is developed by Google LLC and the Open Handset Alliance.
+        We have made it available to you as a development platform pursuant to our commitment to openness,
+        freedom, and innovation in mobile.</string>
+
+</resources>

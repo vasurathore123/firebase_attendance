@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ps.ams.activity.NoticeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_button"
+        android:paddingVertical="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_arrow_back_24"></ImageView>
+
+        <TextView
+            style="@style/textStyle"
+            android:layout_centerInParent="true"
+            android:text="@string/notice"
+            android:textSize="@dimen/_20sdp"></TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/textStyleSmall"
+        android:layout_centerInParent="true"
+        android:text="@string/notice_note"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"></TextView>
+
+</LinearLayout>
+</layout>

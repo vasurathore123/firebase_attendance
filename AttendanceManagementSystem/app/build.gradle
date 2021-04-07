@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.ps.ams"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        useLibrary 'org.apache.http.legacy'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //todo for a Binding
+    dataBinding{
+        enabled true
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //todo for a Size
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //todo for Card View
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    //todo for a Calender
+    compile 'sun.bob:mcalendarview:1.0.0'
+
+    //todo for a Recyclerview
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'\
+
+/*
+
+    //todo for a Firbase
+    compile "com.google.firebase:firebase-auth:9.0.2"
+
+    //todo for firebase
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+    implementation 'com.firebaseui:firebase-ui-database:6.2.0'
+//    implementation "com.squareup.okhttp3:logging-interceptor:4.3.1"
+    implementation 'org.apache.commons:commons-lang3:3.6'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+    // implementation 'com.google.firebase:firebase-core:16.0.3'
+    implementation 'com.google.android.gms:play-services-auth:16.0.0'
+
+    implementation 'com.google.firebase:firebase-core:17.0.1'
+    implementation 'com.google.firebase:firebase-messaging:20.2.1'
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+*/
+
+    //todo for firebase
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+    implementation 'com.firebaseui:firebase-ui-database:6.2.0'
+//    implementation "com.squareup.okhttp3:logging-interceptor:4.3.1"
+    implementation 'org.apache.commons:commons-lang3:3.6'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+    // implementation 'com.google.firebase:firebase-core:16.0.3'
+    implementation 'com.google.android.gms:play-services-auth:16.0.0'
+
+    implementation 'com.google.firebase:firebase-core:17.0.1'
+    implementation 'com.google.firebase:firebase-messaging:20.2.1'
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+
+    //todo for a Animation
+    implementation "com.airbnb.android:lottie:3.6.1"
+
+    //todo for image cropper
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+
+    //todo for glide, volley
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'androidx.multidex:multidex:2.0.0'
+
+}
+/*
+//todo for a Firebase
+apply plugin: 'com.google.gms.google-services'*/
+
+
+//todo for firebase
+apply plugin: 'com.google.gms.google-services'
